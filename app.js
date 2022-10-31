@@ -47,3 +47,12 @@ document.querySelector(".btn").onclick=()=>{
 
 }
 
+document.querySelector(".guess").onkeydown=function(keyb){
+    if(keyb.keyCode==13){
+        document.querySelector(".check").onclick();
+    }
+    if(keyb.keyCode==82){
+        document.querySelector(".btn").onclick();
+    }
+}
+
